@@ -965,6 +965,8 @@ impl From<AVCodecID> for Id {
             AV_CODEC_ID_FITS => Id::FITS,
             AV_CODEC_ID_GREMLIN_DPCM => Id::GREMLIN_DPCM,
             AV_CODEC_ID_DOLBY_E => Id::DOLBY_E,
+
+            _ => unimplemented!(),
         }
     }
 }
@@ -1262,7 +1264,7 @@ impl Into<AVCodecID> for Id {
             Id::ADPCM_G722 => AV_CODEC_ID_ADPCM_G722,
             Id::ADPCM_IMA_APC => AV_CODEC_ID_ADPCM_IMA_APC,
             Id::ADPCM_VIMA => AV_CODEC_ID_ADPCM_VIMA,
-            Id::VIMA => AV_CODEC_ID_VIMA,
+            // Id::VIMA => AV_CODEC_ID_VIMA,
 
             Id::ADPCM_AFC => AV_CODEC_ID_ADPCM_AFC,
             Id::ADPCM_IMA_OKI => AV_CODEC_ID_ADPCM_IMA_OKI,
@@ -1445,6 +1447,8 @@ impl Into<AVCodecID> for Id {
             Id::FITS => AV_CODEC_ID_FITS,
             Id::GREMLIN_DPCM => AV_CODEC_ID_GREMLIN_DPCM,
             Id::DOLBY_E => AV_CODEC_ID_DOLBY_E,
+
+            _ => unimplemented!(),
         }
     }
 }

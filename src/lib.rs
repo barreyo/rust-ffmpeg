@@ -1,5 +1,6 @@
 #![allow(non_camel_case_types)]
 #![cfg_attr(feature = "cargo-clippy", allow(inline_always))]
+#![feature(extern_crate_item_prelude)]
 
 #[macro_use]
 extern crate bitflags;
